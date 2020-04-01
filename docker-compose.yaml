@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+    server:
+        build: ./DockerDemoServer
+        ports:
+            - "3000:3000"
+    client:
+        build:
+            context: ./todo-list
+            dockerfile: Dockerfile-prod
+        ports:
+            - "80:80"
