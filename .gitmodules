@@ -1,3 +1,6 @@
 [submodule "DockerDemoServer"]
 	path = DockerDemoServer
 	url = git@github.com:Nico238/DockerDemoServer.git
+[submodule "todo-list"]
+	path = todo-list
+	url = git@github.com:MrManox/todo-list.git
