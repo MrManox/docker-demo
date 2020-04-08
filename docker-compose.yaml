@@ -1,7 +1,9 @@
 version: "3.7"
 services:
     server:
-        build: ./DockerDemoServer
+        build:
+            context: ./DockerDemoServer
+            dockerfile: Dockerfile
         ports:
             - "3000:3000"
     client:
@@ -10,3 +12,5 @@ services:
             dockerfile: Dockerfile-prod
         ports:
             - "80:80"
+        depends_on: 
+            - server
