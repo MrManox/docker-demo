@@ -18,6 +18,8 @@ git submodule update
   - interactive: ```-it```
   - detach from console: ```-d```
   - name container: ```--name <containername>```
+  - mount host volumes into container: ```-v <host-path>:<container-path>```
+  - exclude subdir of mounted dir (e.g. node_modules): ```-v <container-subdir-path>```
 - stop container: ```docker stop <container-id>```
 - delete container: ```docker rm <container-id>```
 - delete image: ```docker rmi <image-id>```
