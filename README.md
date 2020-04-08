@@ -13,7 +13,7 @@ git submodule update
 - show containers: ```docker ps -a```
 - remove all images and containers: ```docker system prune -a```
 - build image from dockerfile: ```docker build -f <name of dockerfile> -t <imagename>:<tagname> <path>```
-- create container from image ```docker run [OPTIONS] <image-id>
+- create container from image ```docker run [OPTIONS] <image-id>```
   - map ports to host: ``` -p <hostport>:<containerport>```
   - interactive: ```-it```
   - detach from console: ```-d```
