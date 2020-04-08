@@ -25,4 +25,5 @@ git submodule update
   - get shell of container: ```docker exec -it <container-id> sh```
 - start docker-compose: ```docker-compose up [OPTIONS]```
   - rebuildbuild images: ```--build```
+  - detach from console: ```-d```
 - stop docker-compose: ```docker-compose stop```
